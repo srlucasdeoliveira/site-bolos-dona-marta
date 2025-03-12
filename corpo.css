@@ -1,0 +1,162 @@
+/* Resetando alguns estilos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo a fonte base */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #f5b7b1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #d47a7a;
+}
+
+/* Banner */
+.banner {
+  background-color: #f5b7b1;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Seção de Produtos */
+.produtos {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.produtos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #f5b7b1;
+}
+
+.product {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Seção de Contato */
+.contato {
+  background-color: #f5b7b1;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product {
+    width: 45%;
+    margin: 10px auto;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+
+  .banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
